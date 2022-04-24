@@ -16,7 +16,7 @@ startStopBtn.addEventListener("click", () => {
     if (paused) {
         paused = false;
         startTime = Date.now() - elapsedTime;
-        intervalId = setInterval(updateTime, 2500);
+        intervalId = setInterval(updateTime, 100);
     }
     else {
         paused = true;
